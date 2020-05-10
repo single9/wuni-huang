@@ -217,29 +217,141 @@ body {
             .section-1 {
                 .section(#FFAAAA, #FFFFFF, #FF7575);
                 .vertical-box(7%, 15%, 14%, 53%);
+
+                @media screen and (max-width: 1500px) {
+                    .vertical-box(7%, 10%, 14%, 53%);
+                }
+
+                @media screen and (max-width: 1300px) {
+                    .vertical-box(7%, 6%, 14%, 52%);
+                }
+
+                @media screen and (max-width: 1200px) {
+                    .vertical-box(7%, 10%, 20%, 40%);
+                }
             }
 
             .section-2 {
                 .section(#32C17C, #FFFFFF, #5DF4A0);
                 .vertical-box(13%, 5%, 13%, 65%);
+
+                @media screen and (max-width: 1500px) {
+                    .vertical-box(13%, 5%, 23%, 55%);
+                    .left-vertical-box {
+                        width: 90%;
+                    }
+                    .right-vertical-box {
+                        width: 38%;
+                    }
+                }
+
+                @media screen and (max-width: 1300px) {
+                    .vertical-box(13%, 5%, 35%, 55%);
+                    .right-vertical-box {
+                        width: 38%;
+                    }
+                }
+
+                @media screen and (max-width: 1200px) {
+                    .vertical-box(10%, 5%, 35%, 55%);
+                    .left-vertical-box {
+                        width: 90%;
+                    }
+
+                    .right-vertical-box {
+                        width: 38%;
+                    }
+                }
             }
 
             .section-3 {
                 .section(#579AFF, #FFFFFF, #84D9FF);
                 .vertical-box(5%, 20%, 26%, 10%);
-                .all-works-box-shadow()
+                .all-works-box-shadow();
+
+                @media screen and (max-width: 1800px) {
+                    // .vertical-box(7%, 18%, 25%, 9%);
+                    .left-vertical-box {
+                        margin: 10% 5% 0 13%;
+                    }
+
+                    .right-vertical-box {
+                        margin: 30% 9% 0 5%;
+                    }
+                }
+
+                @media screen and (max-width: 1300px) {
+                    // .vertical-box(7%, 18%, 25%, 9%);
+                    .left-vertical-box {
+                        margin: 15% 5% 0 13%;
+                    }
+
+                    .right-vertical-box {
+                        margin: 40% 9% 0 5%;
+                    }
+                }
+
+                .vertical-box-sm();
             }
 
             .section-4 {
                 .section(#FF9B59, #FFFFFF, #FFE09D);
                 .vertical-box(5%, 10%, 26%, 20%);
-                .all-works-box-shadow()
+                .all-works-box-shadow();
+
+                @media screen and (max-width: 1800px) {
+                    // .vertical-box(7%, 18%, 25%, 9%);
+                    .left-vertical-box {
+                        margin: 5% 13% 0 5%;
+                    }
+
+                    .right-vertical-box {
+                        margin: 25% 5% 0 15%;
+                    }
+                }
+
+                @media screen and (max-width: 1300px) {
+                    // .vertical-box(7%, 18%, 25%, 9%);
+                    .left-vertical-box {
+                        margin: 15% 13% 0 5%;
+                    }
+
+                    .right-vertical-box {
+                        margin: 40% 5% 0 9%;
+                    }
+                }
+
+                .vertical-box-sm();
             }
 
             .section-5 {
                 .section(#9D78FF, #FFFFFF, #FFB4F6);
                 .vertical-box(5%, 20%, 26%, 10%);
-                .all-works-box-shadow()
+                .all-works-box-shadow();
+
+                @media screen and (max-width: 1800px) {
+                    // .vertical-box(7%, 18%, 25%, 9%);
+                    .left-vertical-box {
+                        margin: 10% 5% 0 13%;
+                    }
+
+                    .right-vertical-box {
+                        margin: 30% 9% 0 5%;
+                    }
+                }
+
+                @media screen and (max-width: 1300px) {
+                    // .vertical-box(7%, 18%, 25%, 9%);
+                    .left-vertical-box {
+                        margin: 15% 5% 0 13%;
+                    }
+
+                    .right-vertical-box {
+                        margin: 40% 9% 0 5%;
+                    }
+                }
+
+                .vertical-box-sm();
             }
 
             .section-6 {
@@ -268,6 +380,8 @@ body {
 
                     .img-box-shadow-1();
                 }
+
+                .section-boxes-sm();
             }
 
             .section-7 {
@@ -296,6 +410,8 @@ body {
 
                     .img-box-shadow-1();
                 }
+
+                .section-boxes-sm();
             }
         }
     }
