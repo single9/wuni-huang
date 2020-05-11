@@ -168,6 +168,10 @@ body {
                 margin: 0 auto;
                 width: 86.7%;
                 height: 81.4%;
+
+                @media screen and (max-width: 320px) {
+                    height: 75%;
+                }
                 
                 .top {
                     position: relative;
@@ -205,6 +209,21 @@ body {
                     &.text {
                         display: inline-block;
                         height: 50px;
+
+                        .hidden-mb-640 {
+                            @media screen and (max-width: 640px) {
+                                display: none;
+                            }
+                        }
+
+                        &.show-mb-640 {
+                            display: none;
+                            @media screen and (max-width: 640px) {
+                                margin-top: 1%;
+                                display: block;
+                                width: 100%;
+                            }
+                        }
                     }
                 }
 
@@ -253,24 +272,36 @@ body {
                 @media screen and (max-width: 640px) {
                     .vertical-box(0, 0, 0, 0);
                     .left-vertical-box {
-                        transform: translate(55%, 1%) rotate(-45deg);
+                        transform: translate(65%, -1%) rotate(-45deg);
                         width: 50%;
                     }
 
                     .right-vertical-box {
-                        transform: translate(35%, 75%) rotate(-45deg);
+                        transform: translate(35%, 60%) rotate(-45deg);
                         width: 50%;
                     }
                 }
 
                 @media screen and (max-width: 480px) {
                     .left-vertical-box {
+                        transform: translate(80%,-2%) rotate(-45deg);
+                        width: 45%;
+                    }
+
+                    .right-vertical-box {
+                        transform: translate(30%, 50%) rotate(-45deg);
+                        width: 45%;
+                    }
+                }
+
+                @media screen and (max-width: 375px) {
+                    .left-vertical-box {
                         transform: translate(68%,-2%) rotate(-45deg);
                         width: 48%;
                     }
 
                     .right-vertical-box {
-                        transform: translate(30%, 60%) rotate(-45deg);
+                        transform: translate(35%, 80%) rotate(-45deg);
                         width: 48%;
                     }
                 }
@@ -281,7 +312,7 @@ body {
                     }
 
                     .right-vertical-box {
-                        transform: translate(30%, 65%) rotate(-45deg);
+                        transform: translate(30%, 55%) rotate(-45deg);
                     }
                 }
             }
