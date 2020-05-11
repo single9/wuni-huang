@@ -145,6 +145,18 @@ body {
             width: 100%;
             position: relative;
 
+            @media screen and (max-width: 640px) {
+                height: 1000px;
+            }
+
+            @media screen and (max-width: 480px) {
+                height: 640px;
+            }
+
+            @media screen and (max-width: 320px) {
+                height: 500px;
+            }
+
             div {
                 img {
                     width: 100%;
@@ -236,6 +248,41 @@ body {
 
                 @media screen and (max-width: 1200px) {
                     .vertical-box(7%, 10%, 20%, 40%);
+                }
+
+                @media screen and (max-width: 640px) {
+                    .vertical-box(0, 0, 0, 0);
+                    .left-vertical-box {
+                        transform: translate(55%, 1%) rotate(-45deg);
+                        width: 50%;
+                    }
+
+                    .right-vertical-box {
+                        transform: translate(35%, 75%) rotate(-45deg);
+                        width: 50%;
+                    }
+                }
+
+                @media screen and (max-width: 480px) {
+                    .left-vertical-box {
+                        transform: translate(68%,-2%) rotate(-45deg);
+                        width: 48%;
+                    }
+
+                    .right-vertical-box {
+                        transform: translate(30%, 60%) rotate(-45deg);
+                        width: 48%;
+                    }
+                }
+
+                @media screen and (max-width: 320px) {
+                    .left-vertical-box {
+                        transform: translate(75%, -5%) rotate(-45deg);
+                    }
+
+                    .right-vertical-box {
+                        transform: translate(30%, 65%) rotate(-45deg);
+                    }
                 }
             }
 
@@ -528,3 +575,5 @@ body {
         }
     }
 }
+
+@import "./mobile.less";
