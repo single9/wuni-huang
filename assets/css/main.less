@@ -269,52 +269,10 @@ body {
                     .vertical-box(7%, 10%, 20%, 40%);
                 }
 
-                @media screen and (max-width: 640px) {
-                    .vertical-box(0, 0, 0, 0);
-                    .left-vertical-box {
-                        transform: translate(65%, -1%) rotate(-45deg);
-                        width: 50%;
-                    }
-
-                    .right-vertical-box {
-                        transform: translate(35%, 60%) rotate(-45deg);
-                        width: 50%;
-                    }
-                }
-
-                @media screen and (max-width: 480px) {
-                    .left-vertical-box {
-                        transform: translate(80%,-2%) rotate(-45deg);
-                        width: 45%;
-                    }
-
-                    .right-vertical-box {
-                        transform: translate(30%, 50%) rotate(-45deg);
-                        width: 45%;
-                    }
-                }
-
-                @media screen and (max-width: 375px) {
-                    .left-vertical-box {
-                        transform: translate(68%,-2%) rotate(-45deg);
-                        width: 48%;
-                    }
-
-                    .right-vertical-box {
-                        transform: translate(35%, 80%) rotate(-45deg);
-                        width: 48%;
-                    }
-                }
-
-                @media screen and (max-width: 320px) {
-                    .left-vertical-box {
-                        transform: translate(75%, -5%) rotate(-45deg);
-                    }
-
-                    .right-vertical-box {
-                        transform: translate(30%, 55%) rotate(-45deg);
-                    }
-                }
+                .vertical-box-mobile-640(65%, -1%, -45deg, 50%, 35%, 60%, -45deg, 50%);
+                .vertical-box-mobile-480(80%, -2%, -45deg, 45%, 30%, 50%, -45deg, 45%);
+                .vertical-box-mobile-375(68%, -2%, -45deg, 48%, 35%, 80%, -45deg, 48%);
+                .vertical-box-mobile-320(75%, -5%, -45deg, 48%, 30%, 55%, -45deg, 48%);
             }
 
             .section-2 {
@@ -348,6 +306,10 @@ body {
                         width: 38%;
                     }
                 }
+
+                .vertical-box-mobile-640(5%, 5%, 0, 90%, 100%, 47%, 0, 45%);
+                .vertical-box-mobile-375(5%, 5%, 0, 90%, 60%, 85%, 0, 45%);
+                .vertical-box-mobile-320(5%, 10%, 0, 90%, 90%, 40%, 0, 50%);
             }
 
             .section-3 {
