@@ -48,6 +48,16 @@
         }
     }
 
+    @media screen and (min-width: 639px) and (max-width: 767px) {
+        .left-vertical-box {
+            transform: translate(3%, 8%) rotate(45deg);
+        }
+
+        .right-vertical-box {
+            transform: translate(-6%, 60%) rotate(45deg);
+        }
+    }
+
     @media screen and (max-width: 640px) {
         .left-vertical-box {
             width: 90%;
@@ -176,6 +186,26 @@
         .right-bottom-box {
             margin-top: 0;
             padding: 10px;
+        }
+
+        .left-bottom-box {
+            margin: 0 auto;
+            padding: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .left-bottom-box {
+            margin-top: -10%;
+            padding: 20px;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
